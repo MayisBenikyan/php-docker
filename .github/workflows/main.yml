@@ -10,5 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - uses: actions/checkout@v4
       - name: Build the Docker Image
-        run: docker build ../../ -t php-docker
+        run: docker build -t php-docker .
