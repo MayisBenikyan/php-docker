@@ -11,4 +11,4 @@ jobs:
     
     steps:
       - name: Build the Docker Image
-        run: docker build . -f Dockerfile -t php-docker
+        run: docker build ../../ -t php-docker
