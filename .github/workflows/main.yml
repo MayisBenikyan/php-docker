@@ -1,0 +1,14 @@
+name: Php-docker-action
+
+on: 
+  push:
+    branches:
+      -  master
+
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Build the Docker Image
+        run: docker build -t "Php-docker" .
