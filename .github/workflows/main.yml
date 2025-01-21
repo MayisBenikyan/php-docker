@@ -31,4 +31,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: hello-everyone
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
